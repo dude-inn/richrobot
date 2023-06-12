@@ -1,0 +1,6 @@
+pandas
+python-dotenv
+tinkoff
+tinkoff-investments
+ta
+creds

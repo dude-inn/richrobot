@@ -1,0 +1,12 @@
+
+132  BBG000QQPXZ5     LNTA       TQBR     0.20        1      rub    True    174.30     174.30
+133  BBG00F9XX7H4     RNFT       TQBR     0.50        1      rub    True    160.00     160.00
+134  BBG004S68598     MTLR       TQBR    10.00        1      rub    True    159.29     159.29
+135  BBG000K3STR7     APTK       TQBR     0.64       10      rub    True     13.78     137.78
+136  BBG0014PFYM2     RUGR       TQBR     1.00       10      rub    True     11.94     119.44
+137  BBG001M2SC01     ETLN       TQBR     1.00        1      rub    True     92.78      92.78
+
+# Фонды ТИ вообще без комиссии, но на них лимиты
+69  BBG333333333   TMOS       TQTF        0    1      rub    True     6.44       6.44
+70  BBG000000001   TRUR       TQTF        0    1      rub    True     6.07       6.07
+71  TCS00A1039N1   TBRU       TQTF        0    1      rub    True     4.86       4.86
