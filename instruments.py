@@ -145,6 +145,11 @@ def get_5min_candles(figi):
 
 
 def get_15min_candles(figi):
+    """
+    Функция возвращает DataFrame из 15мин свечей акции.
+    :param figi:
+    :return:
+    """
     with Client(TINKOFF_TOKEN) as client:
         r = client.market_data.get_candles(
             figi=figi,
@@ -156,6 +161,14 @@ def get_15min_candles(figi):
 
 
 def xATRTrailingStop_func(close, prev_close, prev_atr, nloss):
+    """
+    Функция вычисляющая ATRTrailingStop.
+    :param close:
+    :param prev_close:
+    :param prev_atr:
+    :param nloss:
+    :return:
+    """
     if close > prev_atr and prev_close > prev_atr:
         return max(prev_atr, close - nloss)
     elif close < prev_atr and prev_close < prev_atr:
@@ -167,6 +180,13 @@ def xATRTrailingStop_func(close, prev_close, prev_atr, nloss):
 
 
 def add_indicators_in_df(pd_data):
+    """
+    Функция добалвяет индикаторы в Dataframe.
+    Реализовано добавление macd_diff, xATR,
+    сигналов Buy и Sell UT BOT
+    :param pd_data:
+    :return:
+    """
     pd_data['macd_diff'] = macd_diff(
         close=pd_data['close'],
         window_slow=MACD_SLOW,
