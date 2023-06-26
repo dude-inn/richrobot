@@ -1,6 +1,12 @@
-pandas
+pandas~=2.0
 python-dotenv
 tinkoff
-tinkoff-investments
-ta
+tinkoff-investments==0.2.0b58
+ta~=0.10.2
 creds
+python-telegram-bot==12.4.2
+requests==2.22.0
+urllib3==1.25.7
+numpy~=1.23
+vectorbt
+pyTelegramBotAPI
